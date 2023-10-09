@@ -135,12 +135,12 @@ android {
     compileSdkVersion rootProject.ext.compileSdkVersion
 
     defaultConfig {
-        applicationId "com.jamgang.spotifygen"
+        applicationId "com.alanyan.euphony"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 3
         versionName "1.0.2"
-        manifestPlaceholders = [appAuthRedirectScheme: 'com.jamgang.spotifygen']
+        manifestPlaceholders = [appAuthRedirectScheme: 'com.alanyan.euphony']
     }
     splits {
         abi {

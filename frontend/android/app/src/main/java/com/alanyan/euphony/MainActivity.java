@@ -1,4 +1,4 @@
-package com.jamgang.spotifygen;
+package com.alanyan.euphony;
 
 import android.os.Bundle;
 import com.facebook.react.ReactActivity;

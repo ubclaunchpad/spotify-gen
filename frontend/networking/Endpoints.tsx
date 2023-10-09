@@ -1,4 +1,5 @@
 import { GlobalContent } from "../AppContext";
+import { Platform } from "react-native";
 
 import { authorize, refresh } from 'react-native-app-auth';
 import { SPOTIFY_CLIENT_ID, SPOTIFY_CLIENT_SECRET } from '@env';
@@ -8,7 +9,7 @@ class AuthenticationHandler {
         this.spotifyAuthConfig = {
             clientId: SPOTIFY_CLIENT_ID,
             clientSecret: SPOTIFY_CLIENT_SECRET,
-            redirectUrl: 'com.jamgang.spotifygen:/oauth',
+            redirectUrl: Platform.OS === 'ios' ? 'com.jamgang.spotifygen:/oauth' : 'com.alanyan.euphony:/oauth',
             scopes: [
                 'user-read-email',
                 'playlist-read-collaborative',
